@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'LemonMilk-regular';
+    src: url('assets/fonts/lemon_milk/LEMONMILK-Regular.otf') format('opentype');
+}
+
+html, body {
+    font-family: 'LemonMilk-regular', sans-serif;
+    margin: 0;
+}
