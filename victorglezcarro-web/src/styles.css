@@ -3,7 +3,46 @@
     src: url('assets/fonts/lemon_milk/LEMONMILK-Regular.otf') format('opentype');
 }
 
-html, body {
+html,
+body {
     font-family: 'LemonMilk-regular', sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    color-scheme: light;
+    --color-1: #012E40;
+    --color-2: #024959;
+    --color-3: #026773;
+    --color-4: #3CA6A6;
+    --color-5: #e9e2db;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        --color-1: #e9e2db;
+        --color-2: #ccc5bf;
+        --color-3: #b3aea8;
+        --color-4: #827e78;
+        --color-5: #0F1B26;
+    }
+}
+
+[color-scheme="light"] {
+    --color-1: #012E40;
+    --color-2: #024959;
+    --color-3: #026773;
+    --color-4: #3CA6A6;
+    --color-5: #e9e2db;
+}
+
+[color-scheme="dark"] {
+    --color-1: #e9e2db;
+    --color-2: #ccc5bf;
+    --color-3: #b3aea8;
+    --color-4: #827e78;
+    --color-5: #0F1B26;
 }
