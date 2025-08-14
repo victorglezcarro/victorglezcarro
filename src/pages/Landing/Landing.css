@@ -1,0 +1,58 @@
+.content{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-image {
+    width: max-content;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.name h1 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: normal;
+}
+
+.name h1:first-child {
+    font-size: 4rem;
+    color: goldenrod;
+}
+
+.name h1:last-child {
+    font-weight: 400;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 15px;
+}
+
+.icons > * {
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.icons > *:hover {
+    transform: scale(1.3);
+}
