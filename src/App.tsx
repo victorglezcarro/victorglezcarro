@@ -5,6 +5,7 @@ import Landing from './pages/Landing/Landing';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import Particles from './Backgrounds/Particles/Particles';
+import Projects from './pages/Projects/Projects';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
       </div>
       <NavBar />
       <Landing sectionId="inicio" />
-      <div className="ss" id="proyectos"></div>
+      <Projects sectionId="proyectos" />
     </>
   )
 

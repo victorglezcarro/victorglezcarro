@@ -30,7 +30,7 @@ function useSectionObserver(sections: string[]) {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [sections, selected]);
 
   return selected;
 }

@@ -1,3 +1,4 @@
+
 import useSectionObserver from "../../hooks/SectionObserver";
 import "./NavBar.css";
 

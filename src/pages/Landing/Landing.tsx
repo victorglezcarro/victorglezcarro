@@ -3,7 +3,7 @@ import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
 
 function Landing({ sectionId }: { sectionId: string }) {
   return (
-    <section id={sectionId} className="content">
+    <section id={sectionId} className="landing-content">
       <div className="name-image">
         <img src="src/assets/profile.png" alt="profile img" className='profile-img' data-aos="fade-right" />
         <div className="info">
