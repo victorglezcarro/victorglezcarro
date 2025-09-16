@@ -1,6 +1,7 @@
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import VariableProximity from "../../TextAnimations/VariableProximity/VariableProximity";
 import "./Projects.css";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 
 interface ProjectData { title: string; description: ReactNode; imgUrl: string; link: string; }
 
@@ -34,11 +35,24 @@ const projects: ProjectData[] = [
 ];
 
 function Projects({ sectionId }: { sectionId: string }) {
+    const containerRef = useRef(null);
+
     return (
-        <section id={sectionId} className="projects-content">
-            {projects.map((project, index) => (
-                <ProjectCard key={index} index={index} title={project.title} description={project.description} imgUrl={project.imgUrl} link={project.link} />
-            ))}
+        <section id={sectionId} className="projects-content" ref={containerRef}>
+            <VariableProximity
+                label={'Proyectos'}
+                className={'variable-proximity-projects'}
+                fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                containerRef={containerRef}
+                radius={100}
+                falloff='gaussian'
+            />
+            <div className="projects-grid">
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} index={index} project={project} />
+                ))}
+            </div>
         </section>
     );
 }

@@ -1,8 +1,8 @@
 
-import useSectionObserver from "../../hooks/SectionObserver";
+import useSectionObserver from "../../hooks/sectionObserver";
 import "./NavBar.css";
 
-const sections = ["inicio", "proyectos", "estudios", "tecnologias", "contacto"];
+const sections = ["inicio", "proyectos", "estudios", "contacto"];
 
 function NavBar() {
   const selected = useSectionObserver(sections);
