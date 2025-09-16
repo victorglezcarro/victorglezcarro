@@ -2,7 +2,7 @@
 import useSectionObserver from "../../hooks/sectionObserver";
 import "./NavBar.css";
 
-const sections = ["inicio", "proyectos", "estudios", "contacto"];
+const sections = ["inicio", "sobre-mí", "proyectos", "estudios", "contacto"];
 
 function NavBar() {
   const selected = useSectionObserver(sections);
@@ -16,7 +16,7 @@ function NavBar() {
               href={`#${section}`}
               className={selected === section ? "selected" : ""}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
             </a>
           </li>
         ))}

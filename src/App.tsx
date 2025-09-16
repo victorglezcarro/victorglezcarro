@@ -7,6 +7,7 @@ import Aos from 'aos';
 import Particles from './Backgrounds/Particles/Particles';
 import Projects from './pages/Projects/Projects';
 import Studies from './pages/Studies/Studies';
+import About from './pages/About/About';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       </div>
       <NavBar />
       <Landing sectionId="inicio" />
+      <About sectionId="sobre-mí" />
       <Projects sectionId="proyectos" />
       <Studies sectionId="estudios" />
     </>
