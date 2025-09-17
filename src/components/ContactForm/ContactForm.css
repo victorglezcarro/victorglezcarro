@@ -19,6 +19,7 @@
 
 .contact-wrap {
     width: 100%;
+    max-width: 800px;
     height: auto;
     padding: 0 5vw;
     box-sizing: border-box;
@@ -26,7 +27,7 @@
 
  .contact-card {
     background: var(--panel);
-    border: 1px solid var(--accent-weak);
+    border: 1px solid #dAA5207A;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: clamp(20px, 4vw, 36px);

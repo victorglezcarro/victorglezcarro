@@ -1,18 +1,20 @@
- .landing-content {
+.landing-content {
     width: 100%;
     min-height: 100vh;
     position: relative;
     z-index: 2;
+    padding: 60px 5vw;
+    box-sizing: border-box;
 }
 
- .profile-img {
+.profile-img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
 }
 
- .name-image {
+.name-image {
     width: max-content;
     max-width: 100%;
     position: absolute;
@@ -24,13 +26,13 @@
     gap: 40px;
 }
 
- .name h1 {
+.name h1 {
     font-size: 3rem;
     margin: 0;
     line-height: normal;
 }
 
- .name h1:first-child {
+.name h1:first-child {
     font-size: 4rem;
     color: goldenrod;
 }
@@ -39,21 +41,23 @@
     font-weight: 400;
 }
 
- .icons {
+.icons {
     width: 100%;
-    display: flex;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    align-items: start;
     gap: 1rem;
     margin-top: 15px;
 }
 
- .icon-button {
+.icon-button {
     cursor: pointer;
     transition: all 0.3s;
     font-size: 20px;
     font-weight: normal;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 3px 10px;
     border-radius: 20px;
@@ -62,7 +66,19 @@
     backdrop-filter: blur(10px);
 }
 
- .icon-button:hover {
-      border-color: #daa520;
-      color: #daa520;
+.icon-button:hover {
+    border-color: #daa520;
+    color: #daa520;
+}
+
+@media (max-width: 1000px) {
+
+    .name-image {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icons {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
 }

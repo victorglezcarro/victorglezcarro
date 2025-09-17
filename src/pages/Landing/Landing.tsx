@@ -10,13 +10,13 @@ function Landing({ sectionId }: { sectionId: string }) {
   return (
     <section id={sectionId} className="landing-content">
       <div className="name-image">
-        <img src="src/assets/profile.png" alt="profile img" className='profile-img' data-aos="fade-right" />
+        <img src="src/assets/profile.png" alt="profile img" className='profile-img' />
         <div className="info">
           <div className="name">
-            <h1 data-aos="fade-down">Víctor</h1>
-            <h1 data-aos="fade-left">González Carro</h1>
+            <h1>Víctor</h1>
+            <h1>González Carro</h1>
           </div>
-          <div className="icons" data-aos="fade-up">
+          <div className="icons">
             <div className="icon-button" onClick={() => openLink("https://www.linkedin.com/in/victorglezcarro/")}><span>LinkedIn</span><FiLinkedin /></div>
             <div className="icon-button" onClick={() => openLink("https://github.com/victorglezcarro")}><span>GitHub</span><FiGithub /></div>
             <div className="icon-button" onClick={() => openLink("src/files/CV_Victor_Gonzalez_Carro.pdf")}><span>CV Vitae</span><FiExternalLink /></div>

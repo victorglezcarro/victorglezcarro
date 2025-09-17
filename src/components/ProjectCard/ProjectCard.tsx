@@ -1,15 +1,13 @@
 import "./ProjectCard.css";
-import useAosInView from "../../hooks/useAosInView";
 import { ReactNode } from "react";
 import { FiExternalLink } from "react-icons/fi";
 
 interface ProjectData { title: string; description: ReactNode; imgUrl: string; link: string; }
 
-function ProjectCard({ index, project }: { index: number; project: ProjectData }) {
-    const cardRef = useAosInView<HTMLDivElement>({ threshold: 0.15, once: true });
+function ProjectCard({ project }: { project: ProjectData }) {
 
     return (
-        <div ref={cardRef} className="project-card" data-aos="flip-left" data-aos-delay={(index + 1) * 250} >
+        <div className="project-card" >
             <img src={project.imgUrl} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.description}</p>

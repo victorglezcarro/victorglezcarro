@@ -1,22 +1,28 @@
- .studies-content {
-     width: 100%;
-     min-height: 100vh;
-     position: relative;
-     z-index: 2;
-     box-sizing: border-box;
-     padding: 60px 5vw;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     gap: 40px;
+.studies-content {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 60px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
- .studies-grid {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     gap: 20px;
+.studies-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .studies-grid {
+        gap: 50px;
+    }
 }

@@ -29,3 +29,9 @@
       color: #daa520;
       font-weight: 600;
 }
+
+@media (max-width: 1000px) {
+    .about-text {
+        padding: 0px 5vw;
+    }
+}
