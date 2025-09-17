@@ -93,6 +93,13 @@ textarea {
     resize: none;
 }
 
+@media (max-width: 800px) {
+    .contact-card input,
+    .contact-card textarea {
+        font-size: 16px; /* Evita zoom automático en iOS */
+    }
+}
+
 input::placeholder,
 textarea::placeholder {
     color: #8e8e8e;

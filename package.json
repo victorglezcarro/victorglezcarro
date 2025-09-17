@@ -16,6 +16,7 @@
     "@react-three/rapier": "^2.1.0",
     "@types/yup": "^0.29.14",
     "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "feather-icons": "^4.29.2",
     "formik": "^2.4.6",
     "framer-motion": "^11.18.2",

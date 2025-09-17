@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./ContactForm.css";
+import { sendContactEmail } from "../../services/email";
 
 const ContactForm = () => {
   const [sent, setSent] = useState(false);
@@ -19,7 +20,7 @@ const ContactForm = () => {
     { resetForm, setSubmitting }: { resetForm: () => void; setSubmitting: (isSubmitting: boolean) => void }
   ) => {
     try {
-      await new Promise(r => setTimeout(r, 600));
+      await sendContactEmail(values);
 
       setSent(true);
       resetForm();
@@ -27,7 +28,7 @@ const ContactForm = () => {
     } catch (e) {
       alert(
         "No se pudo enviar. Inténtalo de nuevo." +
-        " Error: " + e +
+        " Error: " + (e as Error).message +
         "\nValores enviados: " + JSON.stringify(values)
       );
     } finally {
