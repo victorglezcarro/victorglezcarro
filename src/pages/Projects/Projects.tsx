@@ -50,7 +50,7 @@ function Projects({ sectionId }: { sectionId: string }) {
             />
             <div className="projects-grid">
                 {projects.map((project, index) => (
-                    <ProjectCard key={index} index={index} project={project} />
+                    <ProjectCard key={index} project={project} />
                 ))}
             </div>
         </section>

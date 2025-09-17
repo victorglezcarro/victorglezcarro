@@ -7,7 +7,6 @@ import {
   useMemo,
   useRef,
   useEffect,
-  MutableRefObject,
   RefObject,
   HTMLAttributes,
 } from "react";
