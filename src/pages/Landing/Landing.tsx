@@ -19,7 +19,7 @@ function Landing({ sectionId }: { sectionId: string }) {
           <div className="icons">
             <div className="icon-button" onClick={() => openLink("https://www.linkedin.com/in/victorglezcarro/")}><span>LinkedIn</span><FiLinkedin /></div>
             <div className="icon-button" onClick={() => openLink("https://github.com/victorglezcarro")}><span>GitHub</span><FiGithub /></div>
-            <div className="icon-button" onClick={() => openLink("src/files/CV_Victor_Gonzalez_Carro.pdf")}><span>CV Vitae</span><FiExternalLink /></div>
+            <div className="icon-button" onClick={() => openLink("/files/CV_Victor_Gonzalez_Carro.pdf")}><span>CV Vitae</span><FiExternalLink /></div>
           </div>
         </div>
       </div>
