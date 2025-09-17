@@ -1,4 +1,4 @@
-.about-content {
+ .about-content {
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -12,20 +12,20 @@
     gap: 40px;
 }
 
-.about-text {
+ .about-text {
     width: 100%;
     padding: 0px 150px;
     box-sizing: border-box;
 }
 
-.paragraph {
+ .paragraph {
     width: 100%;
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
 }
 
-.important-word {
-    color: #daa520;
-    font-weight: 600;
+ .important-word {
+      color: #daa520;
+      font-weight: 600;
 }

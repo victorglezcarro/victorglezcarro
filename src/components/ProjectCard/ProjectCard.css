@@ -1,6 +1,6 @@
 .project-card {
-    width: 80%;
-    height: 100%;
+        width: 80%;
+        height: 100%;
     border: 1px solid #dAA5207A;
     border-radius: 10px;
     background-color: #2424244D;
@@ -12,6 +12,23 @@
     padding: 20px;
     box-sizing: border-box;
     font-size: 15px;
+}
+@media (max-width: 900px) {
+    .project-card {
+        width: 98vw;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .project-card {
+        width: 100vw;
+        padding: 6px;
+        font-size: 13px;
+    }
+    .project-card h3 {
+        font-size: 1rem;
+    }
 }
 
 .project-card > * {

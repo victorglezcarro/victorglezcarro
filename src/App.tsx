@@ -8,6 +8,7 @@ import Particles from './Backgrounds/Particles/Particles';
 import Projects from './pages/Projects/Projects';
 import Studies from './pages/Studies/Studies';
 import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
       <About sectionId="sobre-mí" />
       <Projects sectionId="proyectos" />
       <Studies sectionId="estudios" />
+      <Contact sectionId='contacto'/>
     </>
   )
 

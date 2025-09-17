@@ -1,5 +1,5 @@
 
-import useSectionObserver from "../../hooks/sectionObserver";
+import useSectionObserver from "../../hooks/SectionObserver";
 import "./NavBar.css";
 
 const sections = ["inicio", "sobre-mí", "proyectos", "estudios", "contacto"];
