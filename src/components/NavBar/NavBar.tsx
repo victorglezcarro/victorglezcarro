@@ -5,7 +5,8 @@ import "./NavBar.css";
 const sections = ["inicio", "sobre-mí", "proyectos", "estudios", "contacto"];
 
 function NavBar() {
-  const selected = useSectionObserver(sections);
+  // Aproximar altura del nav para compensar highlight correcto
+  const selected = useSectionObserver(sections, { offsetTop: 80, baseThreshold: 0.5, adaptive: true });
 
   return (
     <nav>
