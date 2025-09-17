@@ -13,7 +13,7 @@ const projects: ProjectData[] = [
                 Aplicación de gestión interna desarrollada para la entidad encargada del espacio aéreo en España. El proyecto se centró en una migración tecnológica a versiones modernas, mejorando seguridad y escalabilidad. Se utilizó Java + Spring en el backend, Angular 17+ en el frontend, con Oracle SQL para la base de datos y Figma en el diseño, siguiendo metodología Agile para garantizar entregas iterativas de valor.
             </>
         ),
-        imgUrl: "src/assets/Enaire.png",
+        imgUrl: "/assets/Enaire.png",
         link: "https://www.enaire.es/home"
     },
     {
@@ -21,7 +21,7 @@ const projects: ProjectData[] = [
             <>
                 Start-up orientada a universidades de EE. UU. que lanzó un marketplace sostenible para que los estudiantes pudieran vender o alquilar productos de sus habitaciones entre compañeros, reduciendo la producción y, con ello, la contaminación. La aplicación principal se construyó en low-code, mientras que la plataforma de administración se desarrolló en Angular 17+, aportando flexibilidad y escalabilidad a la gestión.
             </>
-        ), imgUrl: "src/assets/SharingGroup.png",
+        ), imgUrl: "/assets/SharingGroup.png",
         link: "https://www.linkedin.com/company/sharing-llc/about/"
     },
     {
@@ -29,7 +29,7 @@ const projects: ProjectData[] = [
             <>
                 Proyecto creado para una empresa irlandesa con el objetivo de ayudar a los estudiantes en la generación de resúmenes y currículums mediante IA (ChatGPT). La solución se implementó como una extensión de Google Chrome, que realizaba web scraping con Python + BeautifulSoup, enviaba la información al backend y un script en JavaScript procesaba los datos, mostrando al usuario una ventana emergente con el contenido resumido de la página.
             </>
-        ), imgUrl: "src/assets/TheElephantHive.png",
+        ), imgUrl: "/assets/TheElephantHive.png",
         link: "https://www.theelephanthive.com/"
     },
 ];

@@ -10,7 +10,7 @@ function Landing({ sectionId }: { sectionId: string }) {
   return (
     <section id={sectionId} className="landing-content">
       <div className="name-image">
-        <img src="src/assets/profile.png" alt="profile img" className='profile-img' />
+        <img src="/assets/profile.png" alt="profile img" className='profile-img' />
         <div className="info">
           <div className="name">
             <h1>Víctor</h1>
