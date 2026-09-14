@@ -1,0 +1,25 @@
+.project-art > svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; -webkit-user-select: none; user-select: none; }
+.project-art svg text { font-family: var(--display); }
+.project-art .art-text { font-family: 'Manrope Variable', sans-serif; }
+.project-art .art-mono, .project-art .art-mono text { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.project-art .art-serif { font-family: Georgia, 'Times New Roman', serif; }
+
+.art-topclubs { background-color: #d7edb0; background-image: linear-gradient(#2a501412 1px, transparent 1px), linear-gradient(90deg, #2a501412 1px, transparent 1px); background-size: 45px 45px; }
+.art-redeia { background: radial-gradient(ellipse at 85% 0%, #e6f4f7, transparent 65%) #c4e2ea; }
+.art-enaire { background: linear-gradient(30deg, #183445, #1f4a60); }
+.art-sharing { background: radial-gradient(ellipse at 15% 0%, #da9672, transparent 60%) #ca7b55; }
+.art-elephant { background: radial-gradient(ellipse at 85% 10%, #3f3322, transparent 65%) #2b2419; }
+
+/* Depth on hover/focus instead of looping movement: SVG groups repaint on every animated frame. */
+.art-lift, .art-float { transition: transform .6s cubic-bezier(.22, 1, .36, 1); }
+.project-open:is(:hover, :focus-visible) .art-lift { transform: translateY(-5px); }
+.project-open:is(:hover, :focus-visible) .art-float { transform: translateY(-12px); }
+.art-float-late { transition-delay: .06s; }
+.art-pulse { animation: art-pulse 2.2s ease-in-out infinite; }
+.animations-paused .project-art * { animation-play-state: paused; }
+@keyframes art-pulse { 50% { opacity: .3; } }
+@media (prefers-reduced-motion: reduce) {
+  .project-open:is(:hover, :focus-visible) :is(.art-lift, .art-float) { transform: none; }
+}
+
+.project-art.dialog-art { aspect-ratio: 2; margin: 22px 0 26px; }
